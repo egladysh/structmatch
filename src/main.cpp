@@ -47,7 +47,7 @@ int main()
 		std::clog << "diff_mean=" << mean << " diff_sd=" << sd << std::endl;
 	}
 
-	auto fuzzy = [](const auto& a, const auto& b)
+	auto structmatch = [](const auto& a, const auto& b)
 	{
 		assert(a.size() == b.size());
 		auto map = [](const auto& v)
@@ -84,8 +84,8 @@ int main()
 	};
 
 
-	std::clog << "fuzzy=" << fuzzy(a, b) << std::endl;
-	std::clog << "fuzzy=" << fuzzy(a, c) << std::endl;
+	std::clog << "score(a,b)=" << structmatch(a, b) << std::endl;
+	std::clog << "score(a,c)=" << structmatch(a, c) << std::endl;
 
 	return 0;
 }
