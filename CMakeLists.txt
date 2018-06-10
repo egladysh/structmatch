@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.11 FATAL_ERROR)
-project(fuzzy LANGUAGES CXX)
+project(strutmatch LANGUAGES CXX)
 
 message( STATUS "Generator - ${CMAKE_GENERATOR}")
 message( STATUS "Build type - ${CMAKE_BUILD_TYPE}")
